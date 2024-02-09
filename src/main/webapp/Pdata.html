@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hospital Management System</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #d6cece;
+		}
+
+		header {
+			background-color: rgb(176, 138, 183);
+			color: #fff;
+			padding: 10px;
+			text-align: center;
+		}
+
+		section {
+			padding: 20px;
+		}
+
+		form {
+			max-width: 600px;
+			margin: 0 auto;
+			background-color: #f0d9d9;
+			padding: 20px;
+			border-radius: 8px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+		}
+
+		label {
+			display: block;
+			margin-bottom: 8px;
+		}
+
+		input,
+		select {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 15px;
+			box-sizing: border-box;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			/*	background-color: rgb(221, 219, 221);*/
+		}
+
+		button {
+			background-color: #0056b3;
+			color: #fff;
+			padding: 10px 15px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+
+		button:hover {
+			background-color: #14b246;
+		}
+	</style>
+</head>
+
+<body>
+
+	<header>
+		<h1>Hospital Management System</h1>
+	</header>
+
+	<section>
+		<form id="patientForm" action="patientForm" method="get">
+
+
+			<!-- <label for="PID">Patient ID:</label>
+            <input type="text" id="PID" name="PID" > -->
+
+			<label for="patientName">Patient Name:</label>
+			<input type="text" id="patientName" name="patientName" placeholder="Full-name">
+
+			<label for="patientAge">Patient Age:</label>
+			<input type="number" id="patientAge" name="patientAge" placeholder="Age">
+
+			<label for="DOB">Date Of Birth:</label>
+			<input type="date" id="DOB" name="DOB">
+
+			<label for="patientGender">Patient Gender:</label>
+			<select id="patientGender" name="patientGender">
+				<option value="">Select-</option>
+				<option value="male">Male</option>
+				<option value="female">Female</option>
+				<option value="other">Other</option>
+			</select>
+
+			<label for="Contact_number">Phone Number:</label>
+			<input type="number" id="Contact_number" name="Contact_number" placeholder="eg: 1234567890">
+
+			<label for="Email_address">Email_address:</label>
+			<input type="email" id="Email_address" name="Email_address" placeholder="eg: abc12@gmail.in">
+
+			<label for="Email_address">Password:</label>
+			<input type="password" id="Password" name="Password" placeholder="Password">
+
+			<label for="Email_address">Conform=Password:</label>
+			<input type="password" id="Password" name="ConformPassword" placeholder="Password">
+
+			<button type="submit">Submit</button>
+			<button type="Cancel">Cancel</button>
+		</form>
+	</section>
+
+	<!-- <script>
+        document.getElementById("patientForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            // Perform form submission logic here
+            // You can use JavaScript to send data to the server or perform other actions
+            // For simplicity, we're not including the server-side logic here
+            alert("Form submitted!");
+        });
+    </script> -->
+
+</body>
+
+</html>
