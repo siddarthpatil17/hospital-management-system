@@ -13,6 +13,7 @@ import Data.Patient_Data;
 import Dataaccess.Access_data;
 
 @WebServlet("/login")
+//login page
 public class Login extends HttpServlet {
 
 	@Override
